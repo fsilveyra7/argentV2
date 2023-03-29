@@ -3,9 +3,253 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/argentV2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/argentV2/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Argent Frontpage</title>
 </head>
 <body>
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container-xxl">
+        <a href="#intro" class="navbar-brand">
+            <span class="fw-bold h1 ms-5">
+                ARGENT
+            </span>
+        </a>
+        <!-- toggle button for mobile nav -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- navbar links -->
+        <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#quote" class="nav-link">Quote for free</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about-us" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#catalog" class="nav-link">Catalog</a>
+                </li>
+                <li class="nav-item ms-2">
+                    <a href="tel:410-602-5008" class="btn btn-warning">
+                        <i class="bi bi-telephone-fill"></i>
+                        <span>81-000-0000</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</nav>
+
+
+<!-- intro section -->
+<section class="py-5" id="intro">
+    <div class="container-lg text-center my-5">
+        <p class="lead">EXPERIENCE THE STRENGTH AND DURABILITY OF OUR</p>
+        <p class="h1 fw-bold">PREMIUM STEEL WIRE CABLES</p>
+        <p class="fw-light fst-italic">Take the first step towards a safer, more efficient future</p>
+        <button type="button" class="btn btn-warning px-4 py-2">REQUEST A QUOTE FOR FREE</button>
+    </div>
+</section>
+
+
+
+<!-- quote section -->
+<section class="bg-primary text-light py-3 " id="quote">
+    <div class="container-lg">
+        <div class="h3 fw-bold text-center py-2">
+            <span class="text-decoration-underline">QUOTE FOR FREE</span> YOUR INDUSTRIAL CABLE!
+        </div>
+        <hr class="mx-auto border-5 opacity-100 mb-5" style="width: 10%; color:yellow">
+
+        <!-- start form inputs -->
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <form>
+                    <div class="row">
+                        <!-- first row -->
+                        <div class="col-md-4  mb-4">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="col-md-4  mb-4">
+                            <input type="password" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock" placeholder="Password">
+                        </div>
+                        <div class="col-md-4  mb-4">
+                            <input class="form-control" type="text" placeholder="Disabled input" aria-label="Disabled input example" disabled>
+                        </div>
+                        
+                        <!-- second row -->
+                        <div class="col-md-4  mb-4">
+                            <input class="form-control" type="text" value="Readonly input here..." aria-label="readonly input example" readonly>
+                        </div>
+                        <div class="col-md-4  mb-4">
+                            <input class="form-control" type="file" id="formFileMultiple" multiple>
+                        </div>
+                        <div class="col-md-4  mb-4">
+                            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Click to view default options">
+                            <datalist id="datalistOptions">
+                                <option value="small steel cable">
+                                <option value="BIG STEEL CABLE">
+                                <option value="Seattle">
+                                <option value="( ͡° ͜ʖ ͡°)">
+                                <option value="amongus ඞ">
+                            </datalist>
+                        </div>
+                    
+                        <!-- third row -->
+                        <div class="col-md-4  mb-4">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Open this select amogus</option>
+                                <option value="1">ඞ</option>
+                                <option value="2">ඞඞ</option>
+                                <option value="3">ඞඞඞ</option>
+                              </select>
+                        </div>
+                        <div class="col-md-4  mb-4">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                            <label class="form-check-label" for="flexCheckDefault">
+                                Default checkbox
+                            </label>
+                            <br>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                            <label class="form-check-label" for="flexCheckChecked">
+                                another option
+                            </label>
+                        </div>
+                        <div class="col-md-4  mb-4">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1">
+                                  Default radio
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2">
+                                  Default checked radio
+                                </label>
+                              </div>
+                        </div>
+
+                        <!-- fourth row -->
+                        <div class="mb-4">
+                            <label for="exampleFormControlTextarea1" class="form-label">Write us additional info!!!!!!!!!!!!</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="write anything :p"></textarea>
+                        </div>
+
+
+                    </div>
+                </form>
+                <div class="text-center">
+                    <button type="button" class="btn btn-warning px-4 py-2">GET QUOTE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- about us section -->
+<section class="py-5" id="about-us">
+    <div class="container-lg col-10">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-md-7 text-center text-md-start">
+                <div>
+                    <p class="lead">ABOUT US</p>
+                    <hr class="border-5 opacity-100 mb-4 d-inline-block d-md-block" style="width: 10%; color:yellow">
+                </div>
+                <div>
+                    <div class="mb-5">
+                        <h2 class="fw-bold">OUR MISSION</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero provident, eveniet iusto id maxime ex ullam! Fuga, velit dolores hic itaque sit aperiam, eligendi architecto, placeat quia consequatur laudantium sed!</p>
+                    </div>
+                    <div class="mb-5">
+                        <h2 class="fw-bold">OUR VISION</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel consectetur, perferendis accusantium officia fugiat beatae quibusdam sed quo odit, quidem velit odio molestiae a sint explicabo sapiente. Officiis, quae praesentium.</p>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-warning px-4 py-2">UPGRADE YOUR CONSTRUCTION NOW</button>
+            </div>
+            <div class="col-md-5 ps-5 d-none d-md-block">
+                <img src="assets/wire-img.png" class="img-fluid" alt="steel cable">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- costumers sections -->
+<section class="py-5 bg-secondary-subtle" id="costumers">
+    <div class="container-lg">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">SOME OF OUR COSTUMERS</h1>
+            <hr class="border-5 opacity-100 mb-4 d-inline-block" style="width: 10%; color:yellow">
+        </div>
+        <div class="row col-10 col-md-12 mx-auto">
+            <div class="col-6 col-md-2 mb-5">
+                <img src="assets/adidas-logo.png" class="img-fluid" alt="logo">
+            </div>
+            <div class="col-6 col-md-2 mb-5">
+                <img src="assets/adidas-logo.png" class="img-fluid" alt="logo">
+            </div>
+            <div class="col-6 col-md-2 mb-5">
+                <img src="assets/adidas-logo.png" class="img-fluid" alt="logo">
+            </div>
+            <div class="col-6 col-md-2 mb-5">
+                <img src="assets/adidas-logo.png" class="img-fluid" alt="logo">
+            </div>
+            <div class="col-6 col-md-2 mb-5">
+                <img src="assets/adidas-logo.png" class="img-fluid" alt="logo">
+            </div>
+            <div class="col-6 col-md-2 mb-5">
+                <img src="assets/adidas-logo.png" class="img-fluid" alt="logo">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- catalog section -->
+<section class="py-5" id="catalog">
+    <div class="container-lg text-center">
+        <div class="col-4 mx-auto mb-5">
+            <img src="assets/wire-img.png" class="img-fluid" alt="steel cable">
+        </div>
+        <div class="mx-auto">
+            <h3 class="fw-bolder mb-4">DOWNLOAD OUT INDUSTRIAL CABLE CATALOG</h2>
+            <button type="button" class="btn btn-warning px-4 py-2">DOWNLOAD NOW</button>
+        </div>
+    </div>
+</section>
+
+
+<!-- contact us section -->
+<section class="py-5 bg-primary" id="contact-us">
+    <div class="container-lg text-center my-5">
+        <h3 class="fw-bold text-white">NEED A REPRESENTATIVE TO CONSULT YOUR NEEDS?</h3>
+        <p class="lead text-white fst-italic">We would be happy to work with you to find the perfect solution to your unique requirements.</p>
+        <button type="button" class="btn btn-warning px-4 py-2">CONTACT US</button>
+    </div>
+</section>
+
+
+<!-- footer -->
+<section class="py-3 bg-dark" id="footer">
+    <div class="container-lg text-center">
+        <p class="fw-bold text-white m-0">COPYRIGHT © ARGENT CABLES INDUSTRIALES S.A. DE C.V.</h4>
+    </div>
+</section>
     
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
 </body>
 </html>
