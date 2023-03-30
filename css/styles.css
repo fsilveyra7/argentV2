@@ -1,0 +1,12 @@
+
+.py-larger {
+  padding: 160px 0px 160px 0px;
+}
+
+.intro-background {
+    background-image: url("/argentV2/assets/wire-rope-rolled.jpg");
+    background-color: rgba(255, 255, 255, 0.9);
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
