@@ -2,11 +2,38 @@
 .py-larger {
   padding: 160px 0px 160px 0px;
 }
-
 .intro-background {
     background-image: url("/argentV2/assets/wire-rope-rolled.jpg");
     background-color: rgba(255, 255, 255, 0.9);
     background-blend-mode: lighten;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+.color-transition {
+  display: grid;
+  grid-template-columns: 1fr;
+  
+}
+.gray-pic {
+  filter: grayscale(100%);
+  grid-row-start: 1;
+  grid-column-start: 1;
+  z-index: 1;
+  transition: all 0.8s;
+}
+.color-pic {
+  opacity: 0%;
+  grid-row-start: 1;
+  grid-column-start: 1;
+  z-index: 2;
+  transition: all 0.8s;
+}
+.color-transition:hover .color-pic {
+  opacity: 100%;
+  transform: scale(1.1);
+}
+.color-transition:hover .gray-pic {
+  transform: scale(1.1);
 }
