@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^5.2.3"
+    "bootstrap": "^5.2.3",
+    "docxtemplater": "^3.36.1",
+    "pizzip": "^3.1.4"
   }
 }

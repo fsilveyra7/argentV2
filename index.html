@@ -36,8 +36,8 @@
                 <li class="nav-item">
                     <a href="#catalog" class="nav-link">Catalog</a>
                 </li>
-                <li class="nav-item ms-2">
-                    <a href="tel:410-602-5008" class="btn btn-altwarning">
+                <li class="nav-item ms-md-2 mx-auto">
+                    <a href="tel:81-000-0000" class="btn btn-altwarning">
                         <i class="bi bi-telephone-fill"></i>
                         <span>81-000-0000</span>
                     </a>
@@ -55,100 +55,71 @@
         <p class="fw-bold lead">EXPERIENCE THE STRENGTH AND DURABILITY OF OUR</p>
         <p class="h1 fw-bold">PREMIUM STEEL WIRE CABLES</p>
         <p class="fst-italic">Take the first step towards a safer, more efficient future</p>
-        <button type="button" class="btn btn-altwarning px-4 py-2">REQUEST A QUOTE FOR FREE</button>
+        <a href="#quote">
+            <button type="button" class="btn btn-altwarning px-4 py-2">REQUEST A QUOTE FOR FREE</button>
+        </a>
     </div>
 </section>
 
 
 
 <!-- quote section -->
-<section class="bg-altprimary text-light py-3 " id="quote">
+<section class="bg-altprimary text-light py-5 " id="quote">
     <div class="container-lg">
         <div class="h3 fw-bold text-center py-2">
             <span class="text-decoration-underline">QUOTE FOR FREE</span> YOUR INDUSTRIAL CABLE!
         </div>
         <hr class="mx-auto border-2 opacity-100 mb-5" style="width: 10%; color:#f8cc13">
 
+        <div class="mx-auto">
+            <p class="lead text-center">Fill in all input fields:</p>
+        </div>
+
         <!-- start form inputs -->
-        <div class="row justify-content-center">
+        <div class="row justify-content-center mt-4">
             <div class="col-10">
                 <form>
                     <div class="row">
                         <!-- first row -->
                         <div class="col-md-4  mb-4">
-                            <input type="email" class="form-control" placeholder="Email">
+                            <input type="text" class="form-control" placeholder="Name" id="name">
                         </div>
                         <div class="col-md-4  mb-4">
-                            <input type="password" id="inputPassword5" class="form-control" aria-labelledby="passwordHelpBlock" placeholder="Password">
+                            <input type="text" class="form-control" placeholder="Email" id="email">
                         </div>
                         <div class="col-md-4  mb-4">
-                            <input class="form-control" type="text" placeholder="Disabled input" aria-label="Disabled input example" disabled>
+                            <input type="text" class="form-control" placeholder="Phone" id="phone">
                         </div>
                         
                         <!-- second row -->
                         <div class="col-md-4  mb-4">
-                            <input class="form-control" type="text" value="Readonly input here..." aria-label="readonly input example" readonly>
-                        </div>
-                        <div class="col-md-4  mb-4">
-                            <input class="form-control" type="file" id="formFileMultiple" multiple>
-                        </div>
-                        <div class="col-md-4  mb-4">
-                            <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Click to view default options">
-                            <datalist id="datalistOptions">
-                                <option value="small steel cable">
-                                <option value="BIG STEEL CABLE">
-                                <option value="Seattle">
-                                <option value="( ͡° ͜ʖ ͡°)">
-                                <option value="amongus ඞ">
-                            </datalist>
-                        </div>
-                    
-                        <!-- third row -->
-                        <div class="col-md-4  mb-4">
-                            <select class="form-select" aria-label="Default select example">
-                                <option selected>Open this select amogus</option>
-                                <option value="1">ඞ</option>
-                                <option value="2">ඞඞ</option>
-                                <option value="3">ඞඞඞ</option>
+                            <select class="form-select" id="cableSize" aria-label="Default select example">
+                                <option value="option0">Select cable size:</option>
+                                <option value="1/4">1/4&quot</option>
+                                <option value="3/8">3/8&quot</option>
+                                <option value="1/2">1/2&quot</option>
+                                <option value="3/4">3/4&quot</option>
+                                <option value="1">1&quot</option>
                               </select>
                         </div>
                         <div class="col-md-4  mb-4">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                            <label class="form-check-label" for="flexCheckDefault">
-                                Default checkbox
-                            </label>
-                            <br>
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                            <label class="form-check-label" for="flexCheckChecked">
-                                another option
-                            </label>
+                            <input type="text" class="form-control" placeholder="Cable length (number only)" id="cableLength">
                         </div>
                         <div class="col-md-4  mb-4">
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                <label class="form-check-label" for="flexRadioDefault1">
-                                  Default radio
-                                </label>
-                              </div>
-                              <div class="form-check">
-                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                                <label class="form-check-label" for="flexRadioDefault2">
-                                  Default checked radio
-                                </label>
-                              </div>
+                            <input type="text" class="form-control" placeholder="Additional info 1" id="info1">
                         </div>
 
-                        <!-- fourth row -->
+                        <!-- final row -->
                         <div class="mb-4">
-                            <label for="exampleFormControlTextarea1" class="form-label">Write us additional info!!!!!!!!!!!!</label>
-                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="write anything :p"></textarea>
+                            <label for="exampleFormControlTextarea1" class="form-label">Write us additional info (optional):</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Additional info"></textarea>
                         </div>
 
 
                     </div>
                 </form>
                 <div class="text-center">
-                    <button type="button" class="btn btn-altwarning px-4 py-2">GET QUOTE</button>
+                    <button class="btn btn-altwarning px-4 py-2" id="generate" onclick="generate()">GET QUOTE</button>
                 </div>
             </div>
         </div>
@@ -176,7 +147,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel consectetur, perferendis accusantium officia fugiat beatae quibusdam sed quo odit, quidem velit odio molestiae a sint explicabo sapiente. Officiis, quae praesentium.</p>
                     </div>
                 </div>
-                <button type="button" class="btn btn-altwarning px-4 py-2">UPGRADE YOUR CONSTRUCTION NOW</button>
+                <button type="button" class="btn btn-altwarning px-4 py-2" onclick="placeholderAlert()">UPGRADE YOUR CONSTRUCTION NOW</button>
             </div>
             <div class="col-md-5 ps-5 d-none d-md-block">
                 <img src="assets/wire-img.png" class="img-fluid" alt="steel cable">
@@ -194,30 +165,30 @@
             <hr class="border-2 opacity-100 mb-4 d-inline-block" style="width: 10%; color:#f8cc13">
         </div>
         <div class="row col-10 col-md-12 mx-auto">
-            <div class="col-6 col-md-2 mb-5 align-items-center color-transition">
+            <a href="https://www.johnsoncontrols.com/" target="_blank" class="col-6 col-md-2 mb-5 align-items-center color-transition">
                 <img src="assets/johnson-controls-logo.png" class="img-fluid color-pic" alt="logo">
                 <img src="assets/johnson-controls-logo.png" class="img-fluid gray-pic" alt="logo">
-            </div>
-            <div class="col-6 col-md-2 mb-5 align-items-center color-transition">
+            </a>
+            <a href="https://www.whirlpool.com/" target="_blank" class="col-6 col-md-2 mb-5 align-items-center color-transition">
                 <img src="assets/whirlpool-logo.png" class="img-fluid gray-pic" alt="logo">
                 <img src="assets/whirlpool-logo.png" class="img-fluid color-pic" alt="logo">
-            </div>
-            <div class="col-6 col-md-2 mb-5 align-items-center color-transition">
+            </a>
+            <a href="https://www.joysonsafety.com/" target="_blank" class="col-6 col-md-2 mb-5 align-items-center color-transition">
                 <img src="assets/joyson-logo.png" class="img-fluid gray-pic" alt="logo">
                 <img src="assets/joyson-logo.png" class="img-fluid color-pic" alt="logo">
-            </div>
-            <div class="col-6 col-md-2 mb-5 align-items-center color-transition">
+            </a>
+            <a href="https://www.hussmann.com/" target="_blank" class="col-6 col-md-2 mb-5 align-items-center color-transition">
                 <img src="assets/hussmann-logo.png" class="img-fluid gray-pic" alt="logo">
                 <img src="assets/hussmann-logo.png" class="img-fluid color-pic" alt="logo">
-            </div>
-            <div class="col-6 col-md-2 mb-5 align-items-center color-transition">
+            </a>
+            <a href="https://www.lego.com/" target="_blank" class="col-6 col-md-2 mb-5 align-items-center color-transition">
                 <img src="assets/lego-logo.png" class="img-fluid gray-pic" alt="logo">
                 <img src="assets/lego-logo.png" class="img-fluid color-pic" alt="logo">
-            </div>
-            <div class="col-6 col-md-2 mb-5 align-items-center color-transition">
+            </a>
+            <a href="https://www.madisa.com/" target="_blank" class="col-6 col-md-2 mb-5 align-items-center color-transition">
                 <img src="assets/madisa-logo.png" class="img-fluid gray-pic" alt="logo">
                 <img src="assets/madisa-logo.png" class="img-fluid color-pic" alt="logo">
-            </div>
+            </a>
 
         </div>
     </div>
@@ -232,7 +203,9 @@
         </div>
         <div class="mx-auto">
             <h3 class="fw-bolder mb-4">DOWNLOAD OUR INDUSTRIAL CABLE CATALOG</h2>
-            <button type="button" class="btn btn-altwarning px-4 py-2">DOWNLOAD NOW</button>
+            <a href="/argentV2/files/dummy-pdf.pdf" download>
+                <button type="button" class="btn btn-altwarning px-4 py-2">DOWNLOAD NOW <i class="bi bi-download"></i></button>
+            </a>
         </div>
     </div>
 </section>
@@ -243,7 +216,9 @@
     <div class="container-lg text-center my-5">
         <h3 class="fw-bold text-white">NEED A REPRESENTATIVE TO CONSULT YOUR NEEDS?</h3>
         <p class="lead text-white fst-italic">We would be happy to work with you to find the perfect solution to your unique requirements.</p>
-        <button type="button" class="btn btn-altwarning px-4 py-2">CONTACT US</button>
+        <a href="mailto:dummy-email@gmail.com" class="btn--contact">
+            <button type="button" class="btn btn-altwarning px-4 py-2">CONTACT US</button>
+        </a>
     </div>
 </section>
 
@@ -256,8 +231,27 @@
 </section>
     
 
-
+<!-- script files -->
+<!-- CDN of original bootstrap javascript -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+<!-- Import docxtemplayer.js and it's dependencies (which tbh the next lines I just copied from the site) -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/docxtemplater/3.36.1/docxtemplater.js"></script>
+<script src="https://unpkg.com/pizzip@3.1.4/dist/pizzip.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+<script src="https://unpkg.com/pizzip@3.1.4/dist/pizzip-utils.js"></script>
+
+
+
+<!-- import my custom script.js -->
+<script src="/argentV2/js/script.js"></script>
+
+<!-- placeholder script for button in #about-us section -->
+<script>
+    function placeholderAlert() {
+        alert("Fernando: I don't know what this button should do yet xd")
+    }
+</script>
 
 </body>
 </html>
